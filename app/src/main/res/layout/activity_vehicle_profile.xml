@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.VehicleProfileActivity">
+
+    <TextView
+        android:id="@+id/vehicleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="Porsche 911"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitle1" />
+
+    <TextView
+        android:id="@+id/vehicleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="Sedan"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vehicleModel" />
+
+    <TextView
+        android:id="@+id/vehicleElectric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="EV"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vehicleType" />
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="112dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="@string/driver"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="Rating: 4"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userType" />
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="@string/vehicle"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="Student"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="Richard Guo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/theme_gray"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitle2" />
+
+    <Button
+        android:id="@+id/otherPassengersButton"
+        android:layout_width="168dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/theme_gray"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:onClick="navOtherPassengers"
+        android:text="@string/other_passengers"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/bookVehicleButton"
+        android:layout_width="128dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/theme_gray"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:onClick="bookVehicle"
+        android:text="@string/book_vehicle"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
